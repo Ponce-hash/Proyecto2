@@ -11,11 +11,13 @@
     
       <a-assets>
         <a-asset-item id="catsModel" src="gato_con_gafas.glb"></a-asset-item>
-       
+       <a-asset-item id="gato2Model" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/band-example/raccoon/scene.gltf"></a-asset-item>
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
+<a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#gato2Model" animation-mixer>
+      </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
        
         <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.1 0.1 0.1" src="#catsModel" animation-mixer>
@@ -23,6 +25,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
